@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.MuiDataGrid-colCellTitle {
+  overflow: visible !important;
+  text-overflow: unset !important;
+  white-space: normal !important;
+}
+.MuiDataGrid-columnsContainer{
+
+}
