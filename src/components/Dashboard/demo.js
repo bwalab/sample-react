@@ -59,7 +59,8 @@ const useStyles = makeStyles((theme) => ({
     barginBottom: '10%',
     paddingBottom: '10%',
     borderRadius: '25px',
-
+    minHeight: "80vh",
+    maxHeight: "auto"
   },
   content: {
     flexGrow: 1,
@@ -79,7 +80,8 @@ const useStyles = makeStyles((theme) => ({
   logOut: {
     position: 'absolute',
     bottom: '0',
-    marginBottom: '5%'
+    marginBottom: '5%',
+    marginTop: '5%'
   },
   bullet: {
     display: 'inline-block',
