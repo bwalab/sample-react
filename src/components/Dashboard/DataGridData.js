@@ -68,8 +68,8 @@ class DataGridData extends React.Component {
             {item.locationdata.func_d_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
             {item.locationdata.func_e_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
             {item.locationdata.func_f_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            <td className="table-warning">-</td>
-            <td className="table-warning">-</td>
+            {item.locationdata.func_h_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
+            {item.locationdata.func_g_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
             <td>{item.locationdata.temp_data} °C</td>
             <td>{item.locationdata.sza_data} g/l</td>
             <td>{item.locationdata.min_sza_data} g/l</td>
@@ -83,7 +83,7 @@ class DataGridData extends React.Component {
             <td>{item.locationdata.sludge_index_data} ml/g</td>
             <td>{item.locationdata.dehyd_sludge_sza_data} %</td>
             <td>{item.locationdata.daily_sludge_data} m3</td>
-            <td>- m3</td>
+            <td>{item.locationdata.daily_sludge_sza_data} m3</td>
 
         </tr> : <tr></tr> : <tr></tr>)
 
