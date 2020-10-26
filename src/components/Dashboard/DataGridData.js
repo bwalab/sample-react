@@ -78,10 +78,11 @@ class DataGridData extends React.Component {
             <td>{item.locationdata.avg_elc_data * 100} %</td>
             <td>{item.locationdata.boi_5_on}</td>
             <td>{item.locationdata.minpoolvolume_data} m3</td>
-            <td>{item.locationdata.daily_sludge_data} m3</td>
+            <td>{item.locationdata.pool_volume} kg</td>
+            <td>{item.locationdata.max_capacity_data} kg</td>
             <td>{item.locationdata.sludge_index_data} ml/g</td>
             <td>{item.locationdata.dehyd_sludge_sza_data} %</td>
-            <td>{item.locationdata.pool_volume} kg</td>
+            <td>{item.locationdata.daily_sludge_data} m3</td>
             <td>- m3</td>
 
         </tr> : <tr></tr> : <tr></tr>)
@@ -107,6 +108,7 @@ class DataGridData extends React.Component {
                             <th scope="col">BOI5/öN</th>
                             <th scope="col">Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)</th>
                             <th scope="col">Rendelkezésre álló medencetérfogat (m3)</th>
+                            <th scope="col">Maximális beérkező szennyvíz</th>
                             <th scope="col">Iszapindex (ml/g)</th>
                             <th scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
                             <th scope="col">Napi iszapszaporulat (kg)</th>
