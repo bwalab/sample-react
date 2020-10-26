@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     barginBottom: '10%',
     paddingBottom: '10%',
     borderRadius: '25px',
-    height: "80vh"
+
   },
   content: {
     flexGrow: 1,
