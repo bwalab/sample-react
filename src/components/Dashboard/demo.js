@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     bottom: '0',
     marginBottom: '5%',
-    marginTop: '5%'
+    paddingTop: '5%'
   },
   bullet: {
     display: 'inline-block',
