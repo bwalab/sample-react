@@ -14,7 +14,7 @@ class Dashboard extends React.Component {
     this.state = {
       userId: 0,
       userLoaded: false,
-      locations: {},
+      locations: [],
       SelectedLocation: null,
       SelectedLocationName: '-',
       isLoading: true,
