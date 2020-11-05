@@ -63,13 +63,13 @@ class DataGridData extends React.Component {
             { field: 'pool_volume', headerName: 'Rendelkezésre álló medencetérfogat (m3)', width: 300 },
 
         ]
-        const allData = this.state.all_data.map(item => item.is_albatross ? item.locationdata ? <tr>
+        const allData = this.state.all_data.map(item => item.is_albatross ? item.locationdata ? <tr>success
             <th scope="row">{item.name}</th>
-            {item.locationdata.func_d_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            {item.locationdata.func_e_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            {item.locationdata.func_f_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            {item.locationdata.func_h_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            {item.locationdata.func_g_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
+            {item.locationdata.func_d_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_e_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_f_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_h_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_g_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             <td>{item.locationdata.temp_data} °C</td>
             <td>{item.locationdata.sza_data} g/l</td>
             <td>{item.locationdata.min_sza_data} g/l</td>
