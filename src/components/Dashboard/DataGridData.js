@@ -75,7 +75,7 @@ class DataGridData extends React.Component {
             <td>{item.locationdata.min_sza_data} g/l</td>
             <td>{item.locationdata.max_sza_data} g/l</td>
             <td>{item.locationdata.netto_sludge_data} m3/hét</td>
-            <td>{item.locationdata.avg_elc_data * 100} %</td>
+            <td>{item.locationdata.avg_elc_data} %</td>
             <td>{item.locationdata.boi_5_on}</td>
             <td>{item.locationdata.minpoolvolume_data} m3</td>
             <td>{item.locationdata.pool_volume} m3</td>
