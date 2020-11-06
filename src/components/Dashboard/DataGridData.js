@@ -94,7 +94,7 @@ class DataGridData extends React.Component {
                     <thead>
                         <tr style={{ fontSize: "8px !important" }} className="text-center">
                             <th scope="col">Telephely</th>
-                            <th scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél</th>
+                            <th scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél </th>
                             <th scope="col">Jelen időszakban az utóülepítő túlterhelt</th>
                             <th scope="col">A levegőztetés vagy a víztelenítés üzemideje aránytalanul nagy</th>
                             <th scope="col">A jelen hőmérsékleten a rendelkezésre álló medencetérfogat elegendő</th>
