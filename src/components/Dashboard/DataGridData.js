@@ -84,7 +84,7 @@ class DataGridData extends React.Component {
             <td>{item.locationdata.dehyd_sludge_sza_data} %</td>
             <td>{item.locationdata.daily_sludge_data} m3</td>
             <td>{item.locationdata.daily_sludge_sza_data} m3</td>
-            <td>{item.locationdata.created_date} m3</td>
+            <td>{item.locationdata.created_date}</td>
 
         </tr> : <tr></tr> : <tr></tr>)
 
