@@ -84,6 +84,7 @@ class DataGridData extends React.Component {
             <td>{item.locationdata.dehyd_sludge_sza_data} %</td>
             <td>{item.locationdata.daily_sludge_data} m3</td>
             <td>{item.locationdata.daily_sludge_sza_data} m3</td>
+            <td>{item.locationdata.created_date} m3</td>
 
         </tr> : <tr></tr> : <tr></tr>)
 
@@ -97,7 +98,7 @@ class DataGridData extends React.Component {
                             <th scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél </th>
                             <th scope="col">Jelen időszakban az utóülepítő túlterhelt</th>
                             <th scope="col">A levegőztetés vagy a víztelenítés üzemideje aránytalanul nagy</th>
-                            <th scope="col">A jelen hőmérsékleten a rendelkezésre álló medencetérfogat elegendő</th>
+                            <th scope="col">A jelen hőmérsékleten a rendelkezésre álló medenceterfogat nem elegendő</th>
                             <th scope="col">A denitrifikációhoz nem megfelelő a tápanyagarány</th>
                             <th scope="col">Szennyvíz- hőmérséklet</th>
                             <th scope="col">A biológiai medence szárazanyag tartalma (g/l)</th>
@@ -113,6 +114,7 @@ class DataGridData extends React.Component {
                             <th scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
                             <th scope="col">Napi iszapszaporulat (kg)</th>
                             <th scope="col">Napi iszapszaporulat víztelenített iszapban kifejezve (m3)</th>
+                            <th scope="col">Utolsó mérés dátuma</th>
                         </tr>
                     </thead>
                     <tbody className="text-center">
