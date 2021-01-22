@@ -70,8 +70,8 @@ class DataGridData extends React.Component {
             {item.locationdata.func_f_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_h_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_g_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
-            {item.locationdata.func_j_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
-            {item.locationdata.func_i_data ? <td className="table-success">Igaz</td> : <td className="table-danger">Hamis</td>}
+            {item.locationdata.func_j_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_i_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             <td>{item.locationdata.temp_data} °C</td>
             <td>{item.locationdata.sza_data} g/l</td>
             <td>{item.locationdata.min_sza_data} g/l</td>
@@ -103,7 +103,7 @@ class DataGridData extends React.Component {
                             <th scope="col">A jelen hőmérsékleten a rendelkezésre álló medenceterfogat nem elegendő</th>
                             <th scope="col">A denitrifikációhoz nem megfelelő a tápanyagarány</th>
                             <th scope="col">Teljesítőképesség mértéke 120-as iszapindex esetén nem megfelelő</th>
-                            <th scope="col">Az adatok 3 hétnél nem régebbiek</th>
+                            <th scope="col">Az adatok 3 hétnél régebbiek</th>
                             <th scope="col">Szennyvíz- hőmérséklet</th>
                             <th scope="col">A biológiai medence szárazanyag tartalma (g/l)</th>
                             <th scope="col">A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)</th>
