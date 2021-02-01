@@ -52,7 +52,7 @@ class DataGridData extends React.Component {
             { field: 'temp_data', headerName: 'Hőmérséklet', width: 120 },
             { field: 'sza_data', headerName: 'Sza (g/l)', description: 'A biológiai medence szárazanyag tartalma (g/l)', width: 120 },
             { field: 'min_sza_data', headerName: 'Minimum Sza (g/l)', description: 'A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)', width: 150 },
-            { field: 'max_sza_data', headerName: 'Maximális Sza', width: 150, description: 'Az utóülepítő adottágai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)', width: 150 },
+            { field: 'max_sza_data', headerName: 'Maximális Sza', width: 150, description: 'Az utóülepítő adottságai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)', width: 150 },
             { field: 'netto_sludge_data', headerName: 'Nattó iszapszaporulat (m3/hét)', description: 'Nettó iszapszaporulat víztelenített iszapban kifejezve (m3/hét)', width: 250 },
             { field: 'avg_elc_data', headerName: 'Lakosegyenérték szerinti energiaindex', width: 300 },
             { field: 'boi_5_on', headerName: 'BOI5/öN', width: 120 },
