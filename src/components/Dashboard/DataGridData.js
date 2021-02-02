@@ -93,9 +93,9 @@ class DataGridData extends React.Component {
         return (
 
             <div class="table-responsive">
-                <table class="table" style={{textAlign: left, position: relative, borderCollapse: collapse,}}>
+                <table class="table">
                     <thead>
-                        <tr style={{ fontSize: "8px !important", position: sticky, top: 0 }} className="text-center">
+                        <tr style={{ fontSize: "8px !important" }} className="text-center">
                             <th scope="col">Telephely</th>
                             <th scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél </th>
                             <th scope="col">Jelen időszakban az utóülepítő túlterhelt</th>
