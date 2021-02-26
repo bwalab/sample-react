@@ -90,45 +90,36 @@ class DataGridData extends React.Component {
 
         </tr> : <tr></tr> : <tr></tr>)
 
-        const tableStyle = {
-          
-        }
-        const thStyle = {
-            position: "-webkit-sticky",
-            position: "sticky",
-            top: 0,
-            zIndex: 2,
-        }
 
         return (
 
-            <div class="table-responsive">
+            <div class="table-responsive table-fixed">
                 <table style={tableStyle} class="table">
                     <thead>
                         <tr style={{ fontSize: "8px !important" }} className="text-center">
-                            <th style={thStyle} scope="col">Telephely</th>
-                            <th style={thStyle}  scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél </th>
-                            <th style={thStyle}  scope="col">Jelen időszakban az utóülepítő túlterhelt</th>
-                            <th style={thStyle}  scope="col">A levegőztetés vagy a víztelenítés üzemideje aránytalanul nagy</th>
-                            <th style={thStyle}  scope="col">A jelen hőmérsékleten a rendelkezésre álló medenceterfogat nem elegendő</th>
-                            <th style={thStyle}  scope="col">A denitrifikációhoz nem megfelelő a tápanyagarány</th>
-                            <th style={thStyle}  scope="col">Teljesítőképesség mértéke 120-as iszapindex esetén nem megfelelő</th>
-                            <th style={thStyle}  scope="col">Az adatok 3 hétnél régebbiek</th>
-                            <th style={thStyle}  scope="col">Szennyvíz- hőmérséklet</th>
-                            <th style={thStyle}  scope="col">A biológiai medence szárazanyag tartalma (g/l)</th>
-                            <th style={thStyle}  scope="col">A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)</th>
-                            <th style={thStyle}  scope="col">Az utóülepítő adottágai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)</th>
-                            <th style={thStyle}  scope="col">Nettó iszapszaporulat víztelenített iszapban kifejezve (m3/hét)</th>
-                            <th style={thStyle}  scope="col">Lakosegyenérték szerinti energiaindex</th>
-                            <th style={thStyle}  scope="col">BOI5/öN</th>
-                            <th style={thStyle}  scope="col">Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)</th>
-                            <th style={thStyle}  scope="col">Rendelkezésre álló medencetérfogat (m3)</th>
-                            <th style={thStyle}  scope="col">Maximális beérkező szennyvíz</th>
-                            <th style={thStyle}  scope="col">Iszapindex (ml/g)</th>
-                            <th style={thStyle}  scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
-                            <th style={thStyle}  scope="col">Napi iszapszaporulat (kg)</th>
-                            <th style={thStyle}  scope="col">Napi iszapszaporulat víztelenített iszapban kifejezve (m3)</th>
-                            <th style={thStyle}  scope="col">Utolsó mérés dátuma</th>
+                            <th scope="col">Telephely</th>
+                            <th  scope="col">Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél </th>
+                            <th  scope="col">Jelen időszakban az utóülepítő túlterhelt</th>
+                            <th  scope="col">A levegőztetés vagy a víztelenítés üzemideje aránytalanul nagy</th>
+                            <th  scope="col">A jelen hőmérsékleten a rendelkezésre álló medenceterfogat nem elegendő</th>
+                            <th  scope="col">A denitrifikációhoz nem megfelelő a tápanyagarány</th>
+                            <th  scope="col">Teljesítőképesség mértéke 120-as iszapindex esetén nem megfelelő</th>
+                            <th  scope="col">Az adatok 3 hétnél régebbiek</th>
+                            <th  scope="col">Szennyvíz- hőmérséklet</th>
+                            <th  scope="col">A biológiai medence szárazanyag tartalma (g/l)</th>
+                            <th  scope="col">A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)</th>
+                            <th  scope="col">Az utóülepítő adottágai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)</th>
+                            <th  scope="col">Nettó iszapszaporulat víztelenített iszapban kifejezve (m3/hét)</th>
+                            <th  scope="col">Lakosegyenérték szerinti energiaindex</th>
+                            <th  scope="col">BOI5/öN</th>
+                            <th  scope="col">Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)</th>
+                            <th  scope="col">Rendelkezésre álló medencetérfogat (m3)</th>
+                            <th  scope="col">Maximális beérkező szennyvíz</th>
+                            <th  scope="col">Iszapindex (ml/g)</th>
+                            <th  scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
+                            <th  scope="col">Napi iszapszaporulat (kg)</th>
+                            <th  scope="col">Napi iszapszaporulat víztelenített iszapban kifejezve (m3)</th>
+                            <th  scope="col">Utolsó mérés dátuma</th>
                         </tr>
                     </thead>
                     <tbody className="text-center">
