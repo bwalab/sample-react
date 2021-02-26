@@ -19,3 +19,11 @@ code {
 }
 .MuiDataGrid-columnsContainer {
 }
+thead {
+  display: block;
+}
+tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 500px;
+}
