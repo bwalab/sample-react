@@ -64,7 +64,7 @@ class DataGridData extends React.Component {
 
         ]
         const allData = this.state.all_data.map(item => item.is_albatross ? item.locationdata ? <tr>
-            <th scope="row">{item.name}</th>
+            <th className="thFixed" scope="row">{item.name}</th>
             {item.locationdata.func_d_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_e_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_f_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}

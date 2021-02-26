@@ -22,6 +22,9 @@ code {
 thead {
   display: block;
 }
+.thFixed {
+  display: block;
+}
 tbody {
   display: block;
   overflow-y: scroll;
