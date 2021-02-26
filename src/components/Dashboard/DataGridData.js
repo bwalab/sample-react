@@ -91,12 +91,13 @@ class DataGridData extends React.Component {
         </tr> : <tr></tr> : <tr></tr>)
 
         const tableStyle = {
-            position: "relative",
-            borderCollapse: "collapse",
+          
         }
         const thStyle = {
+            position: "-webkit-sticky",
             position: "sticky",
-            top: 0
+            top: 0,
+            zIndex: 2,
         }
 
         return (
