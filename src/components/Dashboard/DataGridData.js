@@ -91,10 +91,11 @@ class DataGridData extends React.Component {
         </tr> : <tr></tr> : <tr></tr>)
 
 
+
         return (
 
-            <div class="table-responsive table-fixed">
-                <table style={tableStyle} class="table">
+            <div class="table-responsive">
+                <table class="table table-fixed">
                     <thead>
                         <tr style={{ fontSize: "8px !important" }} className="text-center">
                             <th scope="col">Telephely</th>
