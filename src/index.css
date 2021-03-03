@@ -19,7 +19,7 @@ code {
 }
 .MuiDataGrid-columnsContainer {
 }
-thead {
+/* thead {
   display: block;
 }
 .thFixed {
@@ -30,3 +30,4 @@ tbody {
   overflow-y: scroll;
   height: 500px;
 }
+ */
