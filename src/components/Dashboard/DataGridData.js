@@ -49,12 +49,12 @@ class DataGridData extends React.Component {
             { field: 'funcD', headerName: 'Szűk keresztmetszet a sűrítésnél vagy a víztelenítésnél', width: 400, },
             { field: 'funcE', headerName: 'Jelen időszakban az utóülepítő túlterhelt', width: 300 },
             { field: 'funcF', headerName: 'A levegőztetés vagy a víztelenítés üzemideje aránytalanul nagy', width: 450 },
-            { field: 'temp_data', headerName: 'Hőmérséklet', width: 120 },
+            { field: 'temp_data', headerName: 'Hőmérséklet ', width: 120 },
             { field: 'sza_data', headerName: 'Sza (g/l)', description: 'A biológiai medence szárazanyag tartalma (g/l)', width: 120 },
             { field: 'min_sza_data', headerName: 'Minimum Sza (g/l)', description: 'A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)', width: 150 },
             { field: 'max_sza_data', headerName: 'Maximális Sza', width: 150, description: 'Az utóülepítő adottságai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)', width: 150 },
             { field: 'netto_sludge_data', headerName: 'Nattó iszapszaporulat (m3/hét)', description: 'Nettó iszapszaporulat víztelenített iszapban kifejezve (m3/hét)', width: 250 },
-            { field: 'avg_elc_data', headerName: 'Lakosegyenérték szerinti energiaindex', width: 300 },
+            { field: 'avg_elc_data', headerName: 'Lakosegyenérték szerinti energiaindex %', width: 300 },
             { field: 'boi_5_on', headerName: 'BOI5/öN', width: 120 },
             { field: 'minpoolvolume_data', headerName: 'Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)', width: 400 },
             { field: 'sludge_index_data', headerName: 'Iszapindex (ml/g)', width: 120 },
@@ -72,20 +72,20 @@ class DataGridData extends React.Component {
             {item.locationdata.func_g_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_j_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_i_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
-            <td>{item.locationdata.temp_data} °C</td>
-            <td>{item.locationdata.sza_data} g/l</td>
-            <td>{item.locationdata.min_sza_data} g/l</td>
-            <td>{item.locationdata.max_sza_data} g/l</td>
-            <td>{item.locationdata.netto_sludge_data} m3/hét</td>
-            <td>{item.locationdata.avg_elc_data} %</td>
+            <td>{item.locationdata.temp_data}</td>
+            <td>{item.locationdata.sza_data}</td>
+            <td>{item.locationdata.min_sza_data}</td>
+            <td>{item.locationdata.max_sza_data}</td>
+            <td>{item.locationdata.netto_sludge_data}</td>
+            <td>{item.locationdata.avg_elc_data}</td>
             <td>{item.locationdata.boi_5_on}</td>
-            <td>{item.locationdata.minpoolvolume_data} m3</td>
-            <td>{item.locationdata.pool_volume} m3</td>
-            <td>{item.locationdata.max_capacity_data} m3</td>
-            <td>{item.locationdata.sludge_index_data} ml/g</td>
-            <td>{item.locationdata.dehyd_sludge_sza_data} %</td>
+            <td>{item.locationdata.minpoolvolume_data}</td>
+            <td>{item.locationdata.pool_volume}</td>
+            <td>{item.locationdata.max_capacity_data}</td>
+            <td>{item.locationdata.sludge_index_data}</td>
+            <td>{item.locationdata.dehyd_sludge_sza_data}</td>
             <td>{item.locationdata.daily_sludge_data} kg</td>
-            <td>{item.locationdata.daily_sludge_sza_data} m3</td>
+            <td>{item.locationdata.daily_sludge_sza_data}</td>
             <td>{item.locationdata.created_date_data_data}</td>
 
         </tr> : <tr></tr> : <tr></tr>)
@@ -106,16 +106,16 @@ class DataGridData extends React.Component {
                             <th  scope="col">A denitrifikációhoz nem megfelelő a tápanyagarány</th>
                             <th  scope="col">Teljesítőképesség mértéke 120-as iszapindex esetén nem megfelelő</th>
                             <th  scope="col">Az adatok 3 hétnél régebbiek</th>
-                            <th  scope="col">Szennyvíz- hőmérséklet</th>
+                            <th  scope="col">Szennyvíz- hőmérséklet (°C)</th>
                             <th  scope="col">A biológiai medence szárazanyag tartalma (g/l)</th>
                             <th  scope="col">A tisztításhoz szükséges minimális szárazanyag tartalom (g/l)</th>
                             <th  scope="col">Az utóülepítő adottágai miatti maximális megengedett szárazanyag tartalom a biológiai medencében (g/l)</th>
-                            <th  scope="col">Nettó iszapszaporulat víztelenített iszapban kifejezve (m3/hét)</th>
-                            <th  scope="col">Lakosegyenérték szerinti energiaindex</th>
+                            <th  scope="col">Telepen maradó iszap heti mennyisége (m3/víztelenített iszap)</th>
+                            <th  scope="col">Lakosegyenérték szerinti energiaindex (%)</th>
                             <th  scope="col">BOI5/öN</th>
                             <th  scope="col">Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)</th>
                             <th  scope="col">Rendelkezésre álló medencetérfogat (m3)</th>
-                            <th  scope="col">Maximális beérkező szennyvíz</th>
+                            <th  scope="col">maximálisan fogadható órai csucsterhelés (m3)</th>
                             <th  scope="col">Iszapindex (ml/g)</th>
                             <th  scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
                             <th  scope="col">Napi iszapszaporulat (kg)</th>
