@@ -19,7 +19,7 @@ code {
 }
 .MuiDataGrid-columnsContainer {
 }
-thead {
+/* thead {
   display: block;
 }
 tbody {
@@ -30,4 +30,4 @@ tbody {
 
 td, th {
   width: 200px;
-}
+} */
