@@ -115,7 +115,7 @@ class DataGridData extends React.Component {
                             <th  scope="col">BOI5/öN</th>
                             <th  scope="col">Jelenlegi hőmérsékleten szükséges medencetérfogat (m3)</th>
                             <th  scope="col">Rendelkezésre álló medencetérfogat (m3)</th>
-                            <th  scope="col">maximálisan fogadható órai csucsterhelés (m3)</th>
+                            <th  scope="col">Maximálisan fogadható órai csucsterhelés (m3)</th>
                             <th  scope="col">Iszapindex (ml/g)</th>
                             <th  scope="col">Víztelenített iszap szárazanyag tartalma (%)</th>
                             <th  scope="col">Napi iszapszaporulat (kg)</th>
