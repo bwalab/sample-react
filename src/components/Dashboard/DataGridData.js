@@ -68,8 +68,8 @@ class DataGridData extends React.Component {
             {item.locationdata.func_d_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_e_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_f_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
-            {item.locationdata.func_h_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_g_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
+            {item.locationdata.func_h_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_j_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             {item.locationdata.func_i_data ? <td className="table-danger">Igaz</td> : <td className="table-success">Hamis</td>}
             <td>{item.locationdata.temp_data}</td>
