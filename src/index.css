@@ -107,5 +107,7 @@ tbody{
  th, td {
    padding: 8px 16px;
   }
-
+ th {
+   background:#f4f4f4;
+  }
   
