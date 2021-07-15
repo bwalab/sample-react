@@ -71,3 +71,10 @@ table.responsive-table th {
   text-align: left;
 } */
 
+table thead tr th {
+  text-align: left;
+  position: sticky;
+  top: 0px;
+  background-color: #666;
+  color: #fff;
+}
