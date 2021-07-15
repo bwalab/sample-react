@@ -93,7 +93,7 @@ class DataGridData extends React.Component {
 
 
         return (
-
+            <div class="tableFixHead">
             <div class="table-responsive">
                 <table class="table">
                     <thead>
@@ -127,6 +127,7 @@ class DataGridData extends React.Component {
                         {allData}
                     </tbody>
                 </table>
+            </div>
             </div>
 
         )
