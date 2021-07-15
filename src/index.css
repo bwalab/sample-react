@@ -90,7 +90,8 @@ tbody{
   } */
 
  .tableFixHead { 
-   overflow-y: auto; height: 800px;
+   overflow-y: auto; height: 1100px;
+   margin-left: -4%;
   }
  .tableFixHead thead th {
    position: sticky; top: 0; z-index: 1; 
@@ -106,7 +107,5 @@ tbody{
  th, td {
    padding: 8px 16px;
   }
- th {
-   background:#eee;
-  }
+
   
