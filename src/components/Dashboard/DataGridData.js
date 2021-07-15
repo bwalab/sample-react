@@ -94,8 +94,8 @@ class DataGridData extends React.Component {
 
         return (
             <div className="table-area">
-            <div className="table-responsive table">
-                <table >
+            
+                <table className="table-responsive table">
                     <thead>
                         <tr style={{ fontSize: "8px !important" }} className="text-center">
                             <th scope="col">Telephely</th>
@@ -127,7 +127,7 @@ class DataGridData extends React.Component {
                         {allData}
                     </tbody>
                 </table>
-            </div>
+           
             </div>
 
         )
