@@ -71,10 +71,19 @@ table.responsive-table th {
   text-align: left;
 } */
 
-table thead tr th {
-  text-align: left;
-  position: sticky;
-  top: 0px;
-  background-color: #666;
-  color: #fff;
-}
+tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+  }
+  
+table{
+   height:300px;              
+   display: block;
+  }
+tbody{
+    overflow-y: scroll;      
+    height: 200px;          
+    width: 100%;
+    position: absolute;
+  }
